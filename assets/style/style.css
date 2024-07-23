@@ -354,7 +354,7 @@ option:checked {
 
 #about{
     margin: 5rem;
-    
+    padding: 5rem;
     
 }
 
@@ -362,7 +362,7 @@ option:checked {
     text-align: center;
 }
 .about-template{
-    min-width: 200px;
+    padding: 5rem;
     font-size: 2rem;
 }
 
