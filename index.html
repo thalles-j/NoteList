@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteList - Crie sua Lista</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+    <section id="menu">
+        <header>
+            <h1>NoteList</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Principal</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li>
+                        <button class="btnDiaNoite" onclick="toggleDayNightMode()" type="button"> .
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </section>
+
+    <div class="menu-spacing"></div>
+    
+    <section id="home">
+        <div class="home-content">
+            <h1>Seja Bem Vindo ao seu NoteList</h1>
+            <p> Crie sua lista do jeito do melhor jeito que desejar, suas funções, suas ideias, permita-se categorizar para lista de metas, mercado ou não esquecer durante sua rotina. Facíl pratíco e funcional.             
+            </p>
+            
+            <h2>Algumas Opções</h2>
+            <ul>
+                <li>Lista de Supermercado</li>
+                <li>Lista de Objetivos</li>
+                <li>Lista de Shopping</li>
+                <li>Lista de Não-Esquecer</li>
+                <li>Lista de Livros</li>
+                <li>Lista de Material</li>
+            </ul>
+            <br>
+              <a href="#list">Criar Uma</a>
+          </div>
+        <div id="homeImg">
+            <img src="assets/img/homem-vendo-uma-lista.png" alt="mulher-vendo-uma-lista" type="png">
+        </div>
+        
+    </section>
+
+    <div class="mobile-menu-icon">
+        <h1>Listing</h1>
+        <button id="menuShow"><img class="icon" src="assets/img/icon-linhas-50.png" alt="menu"></button>
+    </div>
+
+    <section id="list" class="List-default">
+        <div class="list-template" >
+            <h2>Selecione o tipo da sua lista</h2>
+            <select name="Opções" id="list-options" onchange="alterarTema()">
+                <option value="List-default" selected>Selecione uma opção...</option>
+                <option value="List-market">Supermercado</option>
+                <option value="List-shopping">Shopping</option>
+                <option value="List-book">Livros</option>
+                <option value="List-material">Material</option>
+                <option value="List-outher">Outro</option>
+            </select>
+       
+        <div class="add-input">
+            <div class="input">
+                <h3>Crie sua Lista</h3>
+                
+                <input type="text" placeholder="Digite seu item" id="input-tarefa">
+                <button id="btn-tarefa" title="Adicionar tarefa">+</button>
+            </div>
+                <ul id="tarefas"></ul>
+               
+             </div>
+            </div>
+    </section>
+
+    <section id="about">
+        <div class="about-template">
+            <h2>Sobre</h2>
+            <p> Sou Thalles Jóse e atualmente me encontro na UniFoa no Primeiro Período de Sistema de Informações, esse projeto foi baseado em um estudo por fora e queria me desafiar com CSS e JavaScript.</p>
+        </div>
+    </section>
+
+    <section>
+        <footer>
+            <p>@ Projetado em 12 de Maio de 2024.</p>
+            
+        </footer>
+    </section>
+</body>
+<script src="assets/script/main.js"></script>
+<script src="assets/script/dayandnight.js"></script>
+<script src="assets/script/mudar-tema.js"></script>
+</html>
